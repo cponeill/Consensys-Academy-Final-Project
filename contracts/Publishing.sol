@@ -55,7 +55,9 @@ contract Publishing is Ownable {
     }
 
     /** @dev if anyone calls this contract then the contract will self destruct */
-    function killContract() public {
-    	selfdestruct(owner);
+    function kill() public {
+    	if (msg.sender == owner) {
+	     selfdestruct(owner);
+	}
     }
 }
