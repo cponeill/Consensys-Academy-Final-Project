@@ -32,7 +32,7 @@ The `Publishing Contract` serves as an easy way to `verify` that some text has b
 * ***kill()*** - Self destructs the contract if something goes wrong and acts as a kill switch.
 
 ```
-function saveText(string text) public onlyOwner {
+function saveText(string text) public {
   bytes32 proof = hashText(text);
   storeProof(proof);
 }
