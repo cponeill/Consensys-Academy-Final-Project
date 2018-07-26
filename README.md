@@ -48,8 +48,4 @@ This project is an implementation of a simple React app that interacts with the 
 
 7. Make sure Metamask is set to a private network pointing to localhost 8545
 
-8. Use the app.
-
-* __Where can I find more documentation?__
-
-    This box is a marriage of [Truffle](http://truffleframework.com/) and a React setup created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md). Either one would be a great place to start!
+8. Use the app. Enjoy Ethereum and the Blockchain!
