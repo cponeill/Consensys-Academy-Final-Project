@@ -17,14 +17,14 @@ This project is an implementation of a simple React app that interacts with the 
     $ npm install -g ganache-cli
     ```
 
-2. Clone the repo, cd into the directory, and install node modules
+2. Clone the repo, cd into the directory, and install node modules.
     ```javascript
     clone this repo
     $ cd Consensys-Academy-Final-Project/
     $ npm install
     ```
 
-3. Open another terminal and run the Ganache blockchain (remember to set up your seed phase in Metamask)
+3. Open another terminal and run the Ganache blockchain (remember to set up your seed phase in Metamask).
     ```javascript
     $ ganache-cli
     ```
@@ -35,17 +35,15 @@ This project is an implementation of a simple React app that interacts with the 
     $ truffle migrate
     ```
 
-5. Run the tests to make sure the contract is working correctly
+5. Run the tests to make sure the contract is working correctly.
     ```javascript
     $ truffle test
     ```
 
-6. Serve a local instance of the application on your machine
+6. Serve a local instance of the application on your machine.
     ```javascript
     $ npm start
     The server will launch the app at http://localhost:3000
     ```
 
-7. Make sure Metamask is set to a private network pointing to localhost 8545
-
-8. Use the app. Enjoy Ethereum and the Blockchain!
+7. Make sure Metamask is set to a private network pointing to localhost 8545 and use the app. Enjoy Ethereum and the Blockchain!
