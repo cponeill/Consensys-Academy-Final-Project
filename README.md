@@ -19,7 +19,7 @@ This project is an implementation of a simple React app that interacts with the 
 
 2. Clone the repo, cd into the directory, and install node modules
     ```javascript
-    $ git clone https://github.com/cponeill/Consensys-Academy-Final-Project.git
+    clone this repo
     $ cd Consensys-Academy-Final-Project/
     $ npm install
     ```
