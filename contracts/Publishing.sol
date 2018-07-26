@@ -36,7 +36,7 @@ contract Publishing is Ownable {
 	}
 
 	/** @dev onlyOwner of contract can save text into hash */
-	function saveText(string text) public onlyOwner {
+	function saveText(string text) public {
 		bytes32 proof = hashText(text);
 		storeProof(proof);
 	}
