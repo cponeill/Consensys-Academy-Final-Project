@@ -36,7 +36,7 @@ contract Publishing is Ownable {
 	}
 
 	/** @dev onlyOwner of contract can save text into hash */
-	function saveText(string text) public onlyOwner {
+	function saveText(string text) public {
 		bytes32 proof = hashText(text);
 		storeProof(proof);
 	}
@@ -55,7 +55,9 @@ contract Publishing is Ownable {
     }
 
     /** @dev if anyone calls this contract then the contract will self destruct */
-    function killContract() public {
-    	selfdestruct(owner);
+    function kill() public {
+    	if (msg.sender == owner) {
+	     selfdestruct(owner);
+	}
     }
 }

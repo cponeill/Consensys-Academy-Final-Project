@@ -3,17 +3,17 @@ var Publishing = artifacts.require('./Publishing.sol');
 contract('Publishing', (accounts) => {
   const [firstAccount, secondAccount] = accounts;
 
-  it("sets an owner", async () => {
+  it("Sets an owner of the contract", async () => {
     const publishing = await Publishing.new();
     assert.equal(await publishing.owner.call(), firstAccount);
   });
 
-  it("checks if copyright is false", async () => {
+  it("Checks if copyright is false", async () => {
     const publishing = await Publishing.new();
     assert.equal(await publishing.checkText.call("message"), false);
   });
 
-  it("checks if copyright is true", async () => {
+  it("Checks if copyright is true", async () => {
     const publishing = await Publishing.new();
     publishing.saveText("message");
     assert.equal(await publishing.checkText.call("message"), true);

@@ -29,10 +29,10 @@ The `Publishing Contract` serves as an easy way to `verify` that some text has b
 
 * ***transferOwnership(address)*** - Takes a new address and transfers ownership of the contract to that address.
 
-* ***killContract()*** - Self destructs the contract if something goes wrong and acts as a kill switch.
+* ***kill()*** - Self destructs the contract if something goes wrong and acts as a kill switch.
 
 ```
-function saveText(string text) public onlyOwner {
+function saveText(string text) public {
   bytes32 proof = hashText(text);
   storeProof(proof);
 }
