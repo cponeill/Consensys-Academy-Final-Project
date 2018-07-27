@@ -53,7 +53,7 @@ class CreateHash extends Component {
         publishingInstance = instance;
 
         return publishingInstance.saveText(this.state.lyrics, {from: account[0]})
-      }).then(async (result) => {
+      }).then( async (result) => {
         this.setState({
           transaction: "Here is the transction number: " + result.tx,
           isTrue: await publishingInstance.checkText(this.state.lyrics).then((result) => { return "The results were saved to the blockchain? " + result.toString() }),
