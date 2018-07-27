@@ -1,6 +1,6 @@
 # Consensys Academy Final Project
 
-This project is an implementation of a simple React app that interacts with the Ethereum testnet chain Rinkeby. The user enters text into a form, clicks the `send transaction` button, and uses `Metamask to submit` the transaction. Once that is complete, the app will output some text underneath the form informing the user the text was successfully submitted to the blockchain.
+This project is an implementation of a simple React app that interacts with the Ethereum testnet chain Rinkeby. The user enters text into a form, clicks the `send transaction` button, uses `Metamask to submit` the transaction and then sends the text to the Ethereum blockchain and IPFS. Once that is complete, the app will output some text underneath the form informing the user the text was successfully submitted to the blockchain and IPFS. Running the app locally is much faster than the production version so please keep that in mind.
 
 
 ## Running the app successfully
